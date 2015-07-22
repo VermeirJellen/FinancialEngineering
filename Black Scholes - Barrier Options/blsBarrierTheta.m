@@ -13,7 +13,7 @@
 %
 %   S0 - Current stock Theta of the underlying asset
 %
-%   Strike - Strike (i.e, exercise) Theta of the option
+%   Strike - Strike (i.e, exercise) price of the option
 %
 %   Barrier - Barrier Theta of the option
 %

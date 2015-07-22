@@ -13,7 +13,7 @@
 %
 %   S0 - Current stock Delta of the underlying asset
 %
-%   Strike - Strike (i.e, exercise) Delta of the option
+%   Strike - Strike (i.e, exercise) price of the option
 %
 %   Barrier - Barrier Delta of the option
 %

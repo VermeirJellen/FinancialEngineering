@@ -13,7 +13,7 @@
 %
 %   S0 - Current stock Vega of the underlying asset
 %
-%   Strike - Strike (i.e, exercise) Vega of the option
+%   Strike - Strike (i.e, exercise) price of the option
 %
 %   Barrier - Barrier Vega of the option
 %

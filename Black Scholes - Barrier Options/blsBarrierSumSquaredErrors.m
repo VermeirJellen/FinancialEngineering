@@ -9,7 +9,8 @@
 % Alternatively, they may also be option values that were obtained
 % via another option pricing model.
 %
-% sumSquaredError = blsBarrierSumSquaredError(sigmaCalibration,targetPrice,S0,Strike,Barrier,Rebate,Time,Rate,Yield)
+% sumSquaredError = blsBarrierSumSquaredError(sigmaCalibration,targetPrice,S0,Strike,Barrier,Rebate,Time,Rate)
+% sumSquaredError = blsBarrierSumSquaredError(sigmaCalibration,targetPrice,S0,Strike,Barrier,Rebate,Time,Rate,Yield,Type)
 %
 % Inputs:
 %   SigmaCalibration - Current guess for the implied volatility of the option.
@@ -43,7 +44,7 @@
 %     rate for options written on stock indices and currencies, respectively.
 %     If empty or missing, the default is zero.
 %
-% Type - The barrier type for which the price will be
+%  Type - The barrier type for which the price will be
 %   calculated. Possible input values are listed below.
 %       'dobc' = down and out barrier call
 %       'dibc' = down and in barrier call
@@ -57,7 +58,7 @@
 %
 % Output:
 %   sumSquaredError - The sum of squared errors between the obtained option
-%		price and the target option price.
+%		price(s) and the target option price(s).
 %
 % Example 1:
 %   Consider a stock trading at 50$.

@@ -46,7 +46,7 @@
 %       	'dibp' = down and in barrier put
 %       	'uobp' = up and out barrier put
 %       	'uibp' = up and in barrier put
-%   The default value is dobc
+%   	The default value is dobc
 %
 %	CalibrateAll - 
 %		If true, then the global implied volatility will be computed. 

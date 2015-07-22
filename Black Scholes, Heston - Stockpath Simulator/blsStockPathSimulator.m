@@ -119,7 +119,7 @@ zerosMatrix = zeros(M,N); onesVector = ones(M,1);
 S = [S0*onesVector, zerosMatrix];
 Sneg = S;
 
-% Simulation of N-step trajectories for the Variance and price of the underlying asset 
+% Simulation of N-step trajectories for the stockpaths 
 for i = 1:N
     S(:,i+1) = S(:,i).*(1+(r-q)*dt+sigma*sqrt(dt)*Z(:,i));
     S(:,i+1) = S(:,i+1).*(S(:,i+1)>0); % keep values positive

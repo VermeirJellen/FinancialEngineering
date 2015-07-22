@@ -146,7 +146,7 @@ if(nargin < 14 || isempty(Z3))
 end;
 
 if(Kappa < 0 | Theta < 0 | Eta < 0 | abs(Correlation) > 1 | V0 < 0)
-	error('One or more of the Heston Parameters are incorrectly defined: type help "SimulationStockPathsHeston" for more information on the input requirements.');
+	error('One or more of the Heston Parameters are incorrectly defined: type help "hestStockPathSimulator" for more information on the input requirements.');
 end;
 	
 kappa=Kappa;

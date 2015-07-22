@@ -13,7 +13,7 @@
 %
 %   S0 - Current stock Gamma of the underlying asset
 %
-%   Strike - Strike (i.e, exercise) Gamma of the option
+%   Strike - Strike (i.e, exercise) price of the option
 %
 %   Barrier - Barrier Gamma of the option
 %
