@@ -62,7 +62,7 @@
 % 	Vega = blsBarrierVega(0.20, 50, 55, 40, 2, 1.5, 0.05, 0,'dobc')
 %
 % Example 2:
-%	Consider a more involved example where we Vega 9 different "in" type
+%	Consider a more involved example where we price 9 different "in" type
 %	barrier call options with different strikes and barriers. 
 %	All other parameters remain the same for all options:
 %	sigma = 0.20;

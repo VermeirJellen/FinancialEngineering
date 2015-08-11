@@ -127,6 +127,9 @@ barrierTypes = {'dibc','dobc','uibc','uobc','dibp','dobp','uibp','uobp'};
 if(not(isempty(find(ismember(char(type),barrierTypes)==0))))
 	error('Unknown option type input argument detected: Type "help blsBarrier" for more information');
 end;
+if not(iscellstr(type))
+	type = cellstr(type);
+end;
 
 maxRows = 1; maxColumns = 1;
 inputCell = {sigma,St,K,B,R,T,r,q};
@@ -168,7 +171,7 @@ P4 = phi.*St.*q1.^(-t).*(B./St).^(2*lambda).*normcdf(eta.*y1) - phi.*K.*r1.^(-t)
 P5 = R.*r1.^(-t).*(normcdf(eta.*x1-eta.*sigma.*sqrt(t)) - (B./St).^(2*lambda-2).*normcdf(eta.*y1-eta.*sigma.*sqrt(t)));
 P6 = R.*((B./St).^(a+b).*normcdf(eta.*z) + (B./St).^(a-b).*normcdf(eta.*z-2*eta.*b.*sigma.*sqrt(t)));
 
-if(size(K)==1 & not(maxSize==1))
+if(isequal(size(K),[1 1]) & not(isequal(maxSize,[1 1])))
 	K = repmat(K,maxSize);
 end;
 S1 = ((strcmp(type,'dibc') & K>B) | (strcmp(type,'uibp') & K>B));
