@@ -24,7 +24,7 @@ The product will be structured so that the payoff at maturity equals min(N,alpha
 - We keep 1.00 percent of the notional as profit. This corresponds to 110.00USD.
 - In total, We have 866.58 USD left to pay the periodic coupons. We place this money in the bankaccount.
 
-We will use the money on the bankaccount to pay out the coupons. We take the interest rates into account to account to determine the amount for the 5 future periodic payments that were promised to the investor. In more detail:
+We will use the money on the bankaccount to pay out the coupons. We take the interest rates into account to determine the amount for the 5 future periodic payments that were promised to the investor. In more detail:
 
 - 199.3696USD of the 866.58USD on the bankaccount at issue date will be used to pay out 199.3795USD on Mar. 14th 2015
 - 199.2898USD of the 866.58USD on the bankaccount at issue date will be used to pay out 199.3795USD on Jun. 14th 2015
@@ -32,7 +32,7 @@ We will use the money on the bankaccount to pay out the coupons. We take the int
 - 199.0011USD of the 866.58USD on the bankaccount at issue date will be used to pay out 199.3795USD on Dec. 14th 2015
 - 69.7504USD of the 866.58USD on the bankaccount at issue date will be used to pay out 69.9194USD on Jan. 15th 2016
 
-This corresponds to a total coupon payment of 867.44USD or an annualized coupon payment of 7.2502 percent. For more details on the calculations, view `./ReverseConvertible.m.`. View `./images/Structure.png` for a graphical illustration on the structuring process.
+This corresponds to a total coupon payment of 867.44USD or an annualized coupon payment of 7.2502 percent. For more details on the calculations, view the attached paper and demo implementation. Also view `./images/Structure.png` for a graphical illustration on the structuring process.
 
-### Evaluation
-The return characteristics of the reverse convertible versus the underlying stock and the risk free rate are illustrated in `./images/pnl.png`. For more details, view the attached paper.
+### Product Evaluation
+The return characteristics of the reverse convertible versus the underlying stock and the risk free rate are illustrated in `./images/pnl.png`. For additional details, view the attached paper.
