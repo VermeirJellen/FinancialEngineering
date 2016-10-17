@@ -1,5 +1,5 @@
 clc; clear;
-
+disp('Reading data from excel file.. please wait');
 % Fetch May 2015 XLB option data previously generated via an R script.
 % Alternatively.. use option chain downloader to download fresh data for other assets..
 option = xlsread('optionData/OptionData_Example','OptionData');
@@ -16,10 +16,14 @@ T = T/365; % maturity in years
 weights = 1; % Use (inverted) implied volatility for RMSE weights
 plotOption = true; % plot the calibration results
 
+disp('Option data was read from excel file.');
+disp('Starting Calibration Procedure.. Please Wait');
 % Run the calibration procedure
 tic;
 [hestonParameters, outOfSampleRMSE, outOfSampleRMSEAdjusted] = HestonCalibration(S0,K,T,optionMidMarket,optionType,bid,ask,r,q,weights,plotOption);
 toc
+
+disp('Done..');
 
 hestonParameters
 outOfSampleRMSE
